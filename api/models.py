@@ -10,13 +10,11 @@ class Persona(models.Model):
     
     nombre = models.CharField(
         max_length=200,
-        unique=True,
         help_text="Enter a name"
     )
 
     apellido = models.CharField(
         max_length=200,
-        unique=True,
         help_text="Enter a last name"
     )
 
