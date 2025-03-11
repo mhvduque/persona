@@ -135,6 +135,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',
     'https://persona-9z54.onrender.com',
+    'https://psi-p2-f0n6.onrender.com',
 ]
 
 # REST_FRAMEWORK = {
