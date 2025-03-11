@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-0o*2&tz0t!x6nv@icjnvf#yyvy-(^3ri+2y@7oxwcz^@13&vti
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'persona-9z54.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://psi-p2-f0n6.onrender.com/']
 
 # Application definition
 
@@ -81,7 +81,7 @@ WSGI_APPLICATION = "persona.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-db_from_env = dj_database_url.config(default=os.environ.get('NEON_TECH_DB', 'postgresql://neondb_owner:npg_J4ZVRnAcyaz8@ep-gentle-cherry-a8parpxo-pooler.eastus2.azure.neon.tech/neondb?sslmode=require'), conn_max_age=500)
+db_from_env = dj_database_url.config(default=os.environ.get('NEON_TECH_DB', 'postgresql://neondb_owner:npg_AxXF0o9WMjJq@ep-quiet-unit-a8hk18en-pooler.eastus2.azure.neon.tech/neondb?sslmode=require'), conn_max_age=500)
 
 DATABASES = {
     'default': db_from_env
@@ -134,7 +134,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',
-    'https://persona-9z54.onrender.com',
 ]
 
 # REST_FRAMEWORK = {
