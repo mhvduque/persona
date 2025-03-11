@@ -19,7 +19,6 @@ class Persona(models.Model):
     )
 
     email = models.EmailField(
-        unique=True,
         help_text="Enter an email"
     )
 
