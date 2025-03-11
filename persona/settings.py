@@ -81,7 +81,7 @@ WSGI_APPLICATION = "persona.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-db_from_env = dj_database_url.config(default=os.environ.get('NEON_TECH_DB', 'postgresql://neondb_owner:npg_AxXF0o9WMjJq@ep-quiet-unit-a8hk18en-pooler.eastus2.azure.neon.tech/neondb?sslmode=require'), conn_max_age=500)
+db_from_env = dj_database_url.config(default=os.environ.get('NEON_TECH_DB'), conn_max_age=500)
 
 DATABASES = {
     'default': db_from_env
